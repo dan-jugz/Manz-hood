@@ -21,12 +21,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = 'fz4zk46qwu3@r975m8od9s$we)vg^us)urfmgb-6d73x8g356$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG')
+DEBUG = True
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'hoodwatch.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'instacram',
+        'NAME': 'hood',
         'USER': 'daniel',
     'PASSWORD':'watchlist',
     }
